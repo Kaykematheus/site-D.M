@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniverário M.E</title>
+
+
+
+
+    <style>
+        img{
+            width: 60%;
+        }
+    </style>
+
+    <style>
+     body{
+        background-color: rgb(86, 90, 99);
+     }
+
+        .painel{
+            text-align: center;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+             
+         
+            font: 'Franklin Gothic Medium', 'Arial , Narrow', Arial, sans-serif
+            
+        }
+         #sim{
+            position: absolute ;  
+            height: 70px;
+            width: 50px;
+            background-color: rgb(0, 0, 0);
+            border: white;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            margin-left: -70px;
+         }
+         #nao{        
+            height: 70px;
+            width: 50px;
+            background-color: rgb(0, 0, 0);
+            border: rgb(238, 4, 4);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            margin-left: 15px;
+
+
+
+         }
+
+    </style>       
+
+    
+</head>
+<body>
+         <div class="painel">
+         <h1> Feliz Aniversário Dudinha <3</h1>         
+        
+         
+         
+         <h> É esse anel que vc quer? </h>
+         
+
+<div><img src="Captura de Tela (2).png" alt="Anel V"></div>
+
+
+
+
+         <button onmouseover="fuja()" id="sim"> Sim! </button>
+         <a href="https://www.youtube.com/watch?v=0mJMW2CzTiA"><button id="nao"> Não! </button></a>  
+    
+
+   </div>   
+           
+       <script>
+        function fuja(){
+            var botaoSim = document.getElementById ("sim")
+            
+            var largurajanela = window.innerWidth;
+            var alturajanela = window.innerHeight;
+
+            var maxX = largurajanela - botaoSim.offsetWidth;
+            var maxY = alturajanela - botaoSim.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoSim.style.left = aleatorioX + "px"
+            botaoSim.style.top = aleatorioY + "px"
+        }
+
+        
+       </script>
+
+
+        
+</html>
